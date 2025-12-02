@@ -1,0 +1,845 @@
+[
+  {
+    "desc": "Yangi seansni boshlash",
+    "cat": "Seanslar",
+    "keywords": [
+      "yaratish"
+    ],
+    "shell": [
+      "tmux",
+      "tmux new",
+      "tmux new-session"
+    ],
+    "tmuxcmd": [
+      "new"
+    ],
+    "shortcut": []
+  },
+  {
+    "desc": "Yangi seansni boshlash yoki mavjud <i>mysession</i> deb nomlangan seansga ulanish",
+    "cat": "Seanslar",
+    "keywords": [
+      "yaratish",
+      "ulanish",
+      "qo'shilish"
+    ],
+    "shell": [
+      "tmux new-session -A -s mysession"
+    ],
+    "tmuxcmd": [],
+    "shortcut": []
+  },
+  {
+    "desc": "Yangi <i>mysession</i> nomi bilan seansni boshlash",
+    "cat": "Seanslar",
+    "keywords": [
+      "yaratish"
+    ],
+    "shell": [
+      "tmux new -s mysession"
+    ],
+    "tmuxcmd": [
+      "new -s mysession"
+    ],
+    "shortcut": []
+  },
+  {
+    "desc": "Joriy seansni o'chirish/tugatish",
+    "cat": "Seanslar",
+    "keywords": [
+      "tugatish"
+    ],
+    "shell": [],
+    "tmuxcmd": [
+      "kill-session"
+    ],
+    "shortcut": []
+  },
+  {
+    "desc": "<i>mysession</i> seansini o'chirish/tugatish",
+    "cat": "Seanslar",
+    "keywords": [
+      "tugatish"
+    ],
+    "shell": [
+      "tmux kill-ses -t mysession",
+      "tmux kill-session -t mysession"
+    ],
+    "tmuxcmd": [],
+    "shortcut": []
+  },
+  {
+    "desc": "Joriy seansdan tashqari barcha seanslarni o'chirish/tugatish",
+    "cat": "Seanslar",
+    "keywords": [
+      "tugatish"
+    ],
+    "shell": [
+      "tmux kill-session -a"
+    ],
+    "tmuxcmd": [],
+    "shortcut": []
+  },
+  {
+    "desc": "<i>mysession</i> seansidan tashqari barcha seanslarni o'chirish/tugatish",
+    "cat": "Seanslar",
+    "keywords": [
+      "tugatish"
+    ],
+    "shell": [
+      "tmux kill-session -a -t mysession"
+    ],
+    "tmuxcmd": [],
+    "shortcut": []
+  },
+  {
+    "desc": "Seans nomini o'zgartirish",
+    "cat": "Seanslar",
+    "shell": [],
+    "tmuxcmd": [],
+    "shortcut": [
+      "<span class=\"prefix\"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span> <kbd>$</kbd>"
+    ]
+  },
+  {
+    "desc": "Seansdan ajralish (Detach)",
+    "cat": "Seanslar",
+    "keywords": [
+      "seansdan chiqish"
+    ],
+    "shell": [],
+    "tmuxcmd": [],
+    "shortcut": [
+      "<span class=\"prefix\"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span> <kbd>d</kbd>"
+    ]
+  },
+  {
+    "desc": "Seansdagi boshqalarni ajratish (boshqa mijozlarni ajratish orqali oynani kattalashtirish)",
+    "cat": "Seanslar",
+    "keywords": [
+      "seansdan chiqish",
+      "boshqalarni ajratish",
+      "kattalashtirish"
+    ],
+    "shell": [],
+    "tmuxcmd": [
+      "attach -d"
+    ],
+    "shortcut": []
+  },
+  {
+    "desc": "Barcha seanslarni ko'rsatish",
+    "cat": "Seanslar",
+    "shell": [
+      "tmux ls",
+      "tmux list-sessions"
+    ],
+    "tmuxcmd": [],
+    "shortcut": [
+      "<span class=\"prefix\"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span> <kbd>s</kbd>"
+    ]
+  },
+  {
+    "desc": "Oxirgi seansga ulanish (Attach)",
+    "cat": "Seanslar",
+    "shell": [
+      "tmux a",
+      "tmux at",
+      "tmux attach",
+      "tmux attach-session"
+    ],
+    "tmuxcmd": [],
+    "shortcut": []
+  },
+  {
+    "desc": "<i>mysession</i> nomi bilan seansga ulanish (Attach)",
+    "cat": "Seanslar",
+    "shell": [
+      "tmux a -t mysession",
+      "tmux at -t mysession",
+      "tmux attach -t mysession",
+      "tmux attach-session -t mysession"
+    ],
+    "tmuxcmd": [],
+    "shortcut": []
+  },
+   {
+    "desc": "Seans va Oyna (Window) Ko'rib chiqish",
+    "cat": "Seanslar",
+    "keywords": [
+      "navigatsiya",
+      "o'tish"
+    ],
+    "shell": [],
+    "tmuxcmd": [],
+    "shortcut": [
+      "<span class=\"prefix\"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span> <kbd>w</kbd>"
+    ]
+  },  
+  {
+    "desc": "Oldingi seansga o'tish",
+    "cat": "Seanslar",
+    "keywords": [
+      "navigatsiya",
+      "o'tish"
+    ],
+    "shell": [],
+    "tmuxcmd": [],
+    "shortcut": [
+      "<span class=\"prefix\"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span> <kbd>(</kbd>"
+    ]
+  },
+  {
+    "desc": "Keyingi seansga o'tish",
+    "cat": "Seanslar",
+    "keywords": [
+      "navigatsiya",
+      "o'tish"
+    ],
+    "shell": [],
+    "tmuxcmd": [],
+    "shortcut": [
+      "<span class=\"prefix\"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span> <kbd>)</kbd>"
+    ]
+  },
+  {
+    "desc": "<i>mysession</i> nomi va <i>mywindow</i> oynasi bilan yangi seansni boshlash",
+    "cat": "Oynalar",
+    "keywords": [
+      "yaratish"
+    ],
+    "shell": [
+      "tmux new -s mysession -n mywindow"
+    ],
+    "tmuxcmd": [],
+    "shortcut": []
+  },
+  {
+    "desc": "Oyna (Window) yaratish",
+    "cat": "Oynalar",
+    "keywords": [
+      "yangi oyna yaratish"
+    ],
+    "shell": [],
+    "tmuxcmd": [],
+    "shortcut": [
+      "<span class=\"prefix\"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span> <kbd>c</kbd>"
+    ]
+  },
+  {
+    "desc": "Joriy oynani nomini o'zgartirish",
+    "cat": "Oynalar",
+    "shell": [],
+    "tmuxcmd": [],
+    "shortcut": [
+      "<span class=\"prefix\"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span> <kbd>,</kbd>"
+    ]
+  },
+  {
+    "desc": "Joriy oynani yopish",
+    "cat": "Oynalar",
+    "keywords": [
+      "oynani o'chirish",
+      "oynani tugatish"
+    ],
+    "shell": [],
+    "tmuxcmd": [],
+    "shortcut": [
+      "<span class=\"prefix\"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span> <kbd>&</kbd>"
+    ]
+  },
+  {
+    "desc": "Oynalarni ro'yxatini ko'rsatish",
+    "cat": "Oynalar",
+    "keywords": [
+      "oynalarni ro'yxati",
+      "oynani ko'rsatish"
+    ],
+    "shell": [],
+    "tmuxcmd": [],
+    "shortcut": [
+      "<span class=\"prefix\"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span> <kbd>w</kbd>"
+    ]
+  },
+  {
+    "desc": "Oldingi oyna",
+    "cat": "Oynalar",
+    "keywords": [
+      "navigatsiya"
+    ],
+    "shell": [],
+    "tmuxcmd": [],
+    "shortcut": [
+      "<span class=\"prefix\"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span> <kbd>p</kbd>"
+    ]
+  },
+  {
+    "desc": "Keyingi oyna",
+    "cat": "Oynalar",
+    "keywords": [
+      "navigatsiya"
+    ],
+    "shell": [],
+    "tmuxcmd": [],
+    "shortcut": [
+      "<span class=\"prefix\"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span> <kbd>n</kbd>"
+    ]
+  },
+  {
+    "desc": "Raqam bo'yicha oynani almashtirish/tanlash",
+    "cat": "Oynalar",
+    "shell": [],
+    "tmuxcmd": [],
+    "shortcut": [
+      "<span class=\"prefix\"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span> <kbd>0</kbd> ... <kbd>9</kbd>"
+    ]
+  },
+  {
+    "desc": "Oxirgi faol oynaga o'tish",
+    "cat": "Oynalar",
+    "shell": [],
+    "tmuxcmd": [],
+    "shortcut": [
+      "<span class=\"prefix\"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span> <kbd>l</kbd>"
+    ]
+  },
+  {
+    "desc": "Oynalar ketma-ketligini o'zgartirish, 2(manba) va 1(maqsad) raqamli oynalarni almashtirish",
+    "cat": "Oynalar",
+    "shell": [],
+    "tmuxcmd": [
+      "swap-window -s 2 -t 1"
+    ],
+    "shortcut": []
+  },
+  {
+    "desc": "Joriy oynani bir pozitsiya chapga siljitish",
+    "cat": "Oynalar",
+    "shell": [],
+    "tmuxcmd": [
+      "swap-window -t -1"
+    ],
+    "shortcut": []
+  },
+  {
+    "desc": "Oynani manbadan maqsadga ko'chirish",
+    "cat": "Oynalar",
+    "shell": [],
+    "tmuxcmd": [
+      "move-window -s src_ses:win -t target_ses:win",
+      "movew -s foo:0 -t bar:9",
+      "movew -s 0:0 -t 1:9"
+    ],
+    "shortcut": []
+  },
+  {
+    "desc": "Joriy seansdagi oynani joyini o'zgartirish",
+    "cat": "Oynalar",
+    "shell": [],
+    "tmuxcmd": [
+      "move-window -s src_session:src_window",
+      "movew -s 0:9"
+    ],
+    "shortcut": []
+  },
+  {
+    "desc": "Ketma-ketlikdagi bo'shliqni olib tashlash uchun oynalarni qayta raqamlash",
+    "cat": "Oynalar",
+    "shell": [],
+    "tmuxcmd": [
+      "move-window -r",
+      "movew -r"
+    ],
+    "shortcut": []
+  },
+  {
+    "desc": "Oxirgi faol panelga o'tish",
+    "cat": "Panellar",
+    "shell": [],
+    "tmuxcmd": [],
+    "shortcut": [
+      "<span class=\"prefix\"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span> <kbd>;</kbd>"
+    ]
+  },
+  {
+    "desc": "Joriy panelni vertikal chiziq bilan bo'lish, gorizontal joylashuvni yaratish",
+    "cat": "Panellar",
+    "shell": [],
+    "tmuxcmd": ["split-window -h"],
+    "shortcut": [
+      "<span class=\"prefix\"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span> <kbd>%</kbd>"
+    ]
+  },
+  {
+    "desc": "Joriy panelni gorizontal chiziq bilan bo'lish, vertikal joylashuvni yaratish",
+    "cat": "Panellar",
+    "shell": [],
+    "tmuxcmd": ["split-window -v"],
+    "shortcut": [
+      "<span class=\"prefix\"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span> <kbd>\"</kbd>"
+    ]
+  },
+  {
+    "desc": "Ikkita oynani panel sifatida birlashtirish (2-oynani 1-oynaga panel sifatida birlashtirish)",
+    "cat": "Panellar",
+    "shell": [],
+    "tmuxcmd": ["join-pane -s 2 -t 1"],
+    "shortcut": []
+  },
+  {
+    "desc": "Panelni bir oynadan boshqasiga ko'chirish (2-oynadagi 1-panelni 1-oynadagi 0-panelning keyingi joyiga ko'chirish)",
+    "cat": "Panellar",
+    "shell": [],
+    "tmuxcmd": ["join-pane -s 2.1 -t 1.0"],
+    "shortcut": []
+  },
+  {
+    "desc": "Joriy panelni chapga siljitish",
+    "cat": "Panellar",
+    "shell": [],
+    "tmuxcmd": [],
+    "shortcut": [
+      "<span class=\"prefix\"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span> <kbd>{</kbd>"
+    ]
+  },
+  {
+    "desc": "Joriy panelni o'ngga siljitish",
+    "cat": "Panellar",
+    "shell": [],
+    "tmuxcmd": [],
+    "shortcut": [
+      "<span class=\"prefix\"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span> <kbd>}</kbd>"
+    ]
+  },
+  {
+    "desc": "Panelni yo'nalish bo'yicha almashtirish/o'tish",
+    "cat": "Panellar",
+    "keywords": "navigatsiya",
+    "shell": [],
+    "tmuxcmd": [],
+    "shortcut": [
+      "<span class=\"prefix\"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span> <kbd><i class=\"fa fa-long-arrow-alt-up\"></i></kbd>",
+      "<span class=\"prefix\"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span> <kbd><i class=\"fa fa-long-arrow-alt-down\"></i></kbd>",
+      "<span class=\"prefix\"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span> <kbd><i class=\"fa fa-long-arrow-alt-right\"></i></kbd>",
+      "<span class=\"prefix\"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span> <kbd><i class=\"fa fa-long-arrow-alt-left\"></i></kbd>"
+    ]
+  },
+  {
+    "desc": "synchronize-panes'ni almashtirish (barcha panellarga buyruq yuborish)",
+    "cat": "Panellar",
+    "shell": [],
+    "tmuxcmd": [
+      "setw synchronize-panes"
+    ],
+    "shortcut": []
+  },
+  {
+    "desc": "Panel joylashuvlari orasida almashish",
+    "cat": "Panellar",
+    "shell": [],
+    "tmuxcmd": [],
+    "shortcut": [
+      "<span class=\"prefix\"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span> <kbd>Spacebar</kbd>"
+    ]
+  },
+  {
+    "desc": "Keyingi panelga o'tish",
+    "cat": "Panellar",
+    "shell": [],
+    "tmuxcmd": [],
+    "shortcut": [
+      "<span class=\"prefix\"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span> <kbd>o</kbd>"
+    ]
+  },
+  {
+    "desc": "Panel raqamlarini ko'rsatish",
+    "cat": "Panellar",
+    "shell": [],
+    "tmuxcmd": [],
+    "shortcut": [
+      "<span class=\"prefix\"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span> <kbd>q</kbd>"
+    ]
+  },
+  {
+    "desc": "Raqam bo'yicha panelni almashtirish/tanlash",
+    "cat": "Panellar",
+    "shell": [],
+    "tmuxcmd": [],
+    "shortcut": [
+      "<span class=\"prefix\"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span><span class=\"kbd-margin\"><kbd>q</kbd> </span><kbd>0</kbd> ... <kbd>9</kbd>"
+    ]
+  },
+  {
+    "desc": "Panelni kattalashtirishni (zoom) almashtirish",
+    "cat": "Panellar",
+    "shell": [],
+    "tmuxcmd": [],
+    "shortcut": [
+      "<span class=\"prefix\"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span> <kbd>z</kbd>"
+    ]
+  },
+  {
+    "desc": "Panelni oynaga aylantirish",
+    "cat": "Panellar",
+    "shell": [],
+    "tmuxcmd": [],
+    "shortcut": [
+      "<span class=\"prefix\"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span> <kbd>!</kbd>"
+    ]
+  },
+  {
+    "desc": "Joriy panel balandligini o'lchamini o'zgartirish (ikkinchi tugmani ushlab turish ixtiyoriy)",
+    "cat": "Panellar",
+    "keywords": [
+      "tepaga o'lchamini o'zgartirish",
+      "pastga o'lchamini o'zgartirish"
+    ],
+    "shell": [],
+    "tmuxcmd": [],
+    "shortcut": [
+      "<span class=\"prefix\" style=\"margin-right:0\"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span> + <kbd><i class=\"fa fa-long-arrow-alt-up\"></i></kbd>",
+      "<span class=\"prefix\"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span> <kbd>Ctrl</kbd> + <kbd><i class=\"fa fa-long-arrow-alt-up\"></i></kbd>",
+      "<span class=\"prefix\" style=\"margin-right:0\"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span> + <kbd><i class=\"fa fa-long-arrow-alt-down\"></i></kbd>",
+      "<span class=\"prefix\"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span> <kbd>Ctrl</kbd> + <kbd><i class=\"fa fa-long-arrow-alt-down\"></i></kbd>"
+    ]
+  },
+  {
+    "desc": "Joriy panel kengligini o'lchamini o'zgartirish (ikkinchi tugmani ushlab turish ixtiyoriy)",
+    "cat": "Panellar",
+    "keywords": [
+      "chapga o'lchamini o'zgartirish",
+      "o'ngga o'lchamini o'zgartirish"
+    ],
+    "shell": [],
+    "tmuxcmd": [],
+    "shortcut": [
+      "<span class=\"prefix\" style=\"margin-right:0\"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span> + <kbd><i class=\"fa fa-long-arrow-alt-right\"></i></kbd>",
+      "<span class=\"prefix\"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span> <kbd>Ctrl</kbd> + <kbd><i class=\"fa fa-long-arrow-alt-right\"></i></kbd>",
+      "<span class=\"prefix\" style=\"margin-right:0\"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span> + <kbd><i class=\"fa fa-long-arrow-alt-left\"></i></kbd>",
+      "<span class=\"prefix\"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span> <kbd>Ctrl</kbd> + <kbd><i class=\"fa fa-long-arrow-alt-left\"></i></kbd>"
+    ]
+  },
+  {
+    "desc": "Joriy panelni yopish",
+    "cat": "Panellar",
+    "keywords": [
+      "panelni o'chirish",
+      "panelni tugatish"
+    ],
+    "shell": [],
+    "tmuxcmd": [],
+    "shortcut": [
+      "<span class=\"prefix\"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span> <kbd>x</kbd>"
+    ]
+  },
+  {
+    "desc": "Buferda vi tugmalarini ishlatish",
+    "cat": "Nusxa olish rejimi",
+    "shell": [],
+    "tmuxcmd": [
+      "setw -g mode-keys vi"
+    ],
+    "shortcut": []
+  },
+  {
+    "desc": "Nusxa olish rejimiga kirish",
+    "cat": "Nusxa olish rejimi",
+    "shell": [],
+    "tmuxcmd": [],
+    "shortcut": [
+      "<span class=\"prefix\"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span> <kbd>[</kbd>"
+    ]
+  },
+  {
+    "desc": "Nusxa olish rejimiga kirish va bir sahifani yuqoriga aylantirish",
+    "cat": "Nusxa olish rejimi",
+    "shell": [],
+    "tmuxcmd": [],
+    "shortcut": [
+      "<span class=\"prefix\"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span> <kbd>PgUp</kbd>"
+    ]
+  },
+  {
+    "desc": "Rejimdan chiqish",
+    "cat": "Nusxa olish rejimi",
+    "shell": [],
+    "tmuxcmd": [],
+    "shortcut": [
+      "<kbd>q</kbd>"
+    ]
+  },
+  {
+    "desc": "Eng yuqori qatorga o'tish",
+    "cat": "Nusxa olish rejimi",
+    "shell": [],
+    "tmuxcmd": [],
+    "shortcut": [
+      "<kbd>g</kbd>"
+    ]
+  },
+  {
+    "desc": "Eng pastki qatorga o'tish",
+    "cat": "Nusxa olish rejimi",
+    "shell": [],
+    "tmuxcmd": [],
+    "shortcut": [
+      "<kbd>G</kbd>"
+    ]
+  },
+  {
+    "desc": "Yuqoriga aylantirish",
+    "cat": "Nusxa olish rejimi",
+    "shell": [],
+    "tmuxcmd": [],
+    "shortcut": [
+      "<kbd><i class=\"fa fa-long-arrow-alt-up\"></i></kbd>"
+    ]
+  },
+  {
+    "desc": "Pastga aylantirish",
+    "cat": "Nusxa olish rejimi",
+    "shell": [],
+    "tmuxcmd": [],
+    "shortcut": [
+      "<kbd><i class=\"fa fa-long-arrow-alt-down\"></i></kbd>"
+    ]
+  },
+  {
+    "desc": "Kursorni chapga siljitish",
+    "cat": "Nusxa olish rejimi",
+    "shell": [],
+    "tmuxcmd": [],
+    "shortcut": [
+      "<kbd>h</kbd>"
+    ]
+  },
+  {
+    "desc": "Kursorni pastga siljitish",
+    "cat": "Nusxa olish rejimi",
+    "shell": [],
+    "tmuxcmd": [],
+    "shortcut": [
+      "<kbd>j</kbd>"
+    ]
+  },
+  {
+    "desc": "Kursorni yuqoriga siljitish",
+    "cat": "Nusxa olish rejimi",
+    "shell": [],
+    "tmuxcmd": [],
+    "shortcut": [
+      "<kbd>k</kbd>"
+    ]
+  },
+  {
+    "desc": "Kursorni o'ngga siljitish",
+    "cat": "Nusxa olish rejimi",
+    "shell": [],
+    "tmuxcmd": [],
+    "shortcut": [
+      "<kbd>l</kbd>"
+    ]
+  },
+  {
+    "desc": "Kursorni bir vaqtning o'zida bir so'z oldinga siljitish",
+    "cat": "Nusxa olish rejimi",
+    "shell": [],
+    "tmuxcmd": [],
+    "shortcut": [
+      "<kbd>w</kbd>"
+    ]
+  },
+  {
+    "desc": "Kursorni bir vaqtning o'zida bir so'z orqaga siljitish",
+    "cat": "Nusxa olish rejimi",
+    "shell": [],
+    "tmuxcmd": [],
+    "shortcut": [
+      "<kbd>b</kbd>"
+    ]
+  },
+  {
+    "desc": "Oldinga qidirish",
+    "cat": "Nusxa olish rejimi",
+    "shell": [],
+    "tmuxcmd": [],
+    "shortcut": [
+      "<kbd>/</kbd>"
+    ]
+  },
+  {
+    "desc": "Orqaga qidirish",
+    "cat": "Nusxa olish rejimi",
+    "shell": [],
+    "tmuxcmd": [],
+    "shortcut": [
+      "<kbd>?</kbd>"
+    ]
+  },
+  {
+    "desc": "Keyingi kalit so'z uchrashuvi",
+    "cat": "Nusxa olish rejimi",
+    "shell": [],
+    "tmuxcmd": [],
+    "shortcut": [
+      "<kbd>n</kbd>"
+    ]
+  },
+  {
+    "desc": "Oldingi kalit so'z uchrashuvi",
+    "cat": "Nusxa olish rejimi",
+    "shell": [],
+    "tmuxcmd": [],
+    "shortcut": [
+      "<kbd>N</kbd>"
+    ]
+  },
+  {
+    "desc": "Tanlashni boshlash",
+    "cat": "Nusxa olish rejimi",
+    "shell": [],
+    "tmuxcmd": [],
+    "shortcut": [
+      "<kbd>Spacebar</kbd>"
+    ]
+  },
+  {
+    "desc": "Tanlashni tozalash",
+    "cat": "Nusxa olish rejimi",
+    "shell": [],
+    "tmuxcmd": [],
+    "shortcut": [
+      "<kbd>Esc</kbd>"
+    ]
+  },
+  {
+    "desc": "Tanlashni nusxalash",
+    "cat": "Nusxa olish rejimi",
+    "shell": [],
+    "tmuxcmd": [],
+    "shortcut": [
+      "<kbd>Enter</kbd>"
+    ]
+  },
+  {
+    "desc": "buffer_0 tarkibini joylashtirish (Paste)",
+    "cat": "Nusxa olish rejimi",
+    "shell": [],
+    "tmuxcmd": [],
+    "shortcut": [
+      "<span class=\"prefix\"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span> <kbd>]</kbd>"
+    ]
+  },
+  {
+    "desc": "buffer_0 tarkibini ko'rsatish",
+    "cat": "Nusxa olish rejimi",
+    "shell": [],
+    "tmuxcmd": [
+      "show-buffer"
+    ],
+    "shortcut": []
+  },
+  {
+    "desc": "Panelning butun ko'rinadigan tarkibini buferga nusxalash (capture)",
+    "cat": "Nusxa olish rejimi",
+    "shell": [],
+    "tmuxcmd": [
+      "capture-pane"
+    ],
+    "shortcut": []
+  },
+  {
+    "desc": "Barcha buferlarni ko'rsatish",
+    "cat": "Nusxa olish rejimi",
+    "shell": [],
+    "tmuxcmd": [
+      "list-buffers"
+    ],
+    "shortcut": []
+  },
+  {
+    "desc": "Barcha buferlarni ko'rsatish va tanlanganini joylashtirish",
+    "cat": "Nusxa olish rejimi",
+    "shell": [],
+    "tmuxcmd": [
+      "choose-buffer"
+    ],
+    "shortcut": []
+  },
+  {
+    "desc": "Bufer tarkibini <i>buf.txt</i> ga saqlash",
+    "cat": "Nusxa olish rejimi",
+    "shell": [],
+    "tmuxcmd": [
+      "save-buffer buf.txt"
+    ],
+    "shortcut": []
+  },
+  {
+    "desc": "buffer_1 ni o'chirish",
+    "cat": "Nusxa olish rejimi",
+    "shell": [],
+    "tmuxcmd": [
+      "delete-buffer -b 1"
+    ],
+    "shortcut": []
+  },
+  {
+    "desc": "Buyruq rejimiga kirish",
+    "cat": "Boshqa",
+    "shell": [],
+    "tmuxcmd": [],
+    "shortcut": [
+      "<span class=\"prefix\"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span> <kbd>:</kbd>"
+    ]
+  },
+  {
+    "desc": "Barcha seanslar uchun OPTION ni o'rnatish",
+    "cat": "Boshqa",
+    "shell": [],
+    "tmuxcmd": [
+      "set -g OPTION"
+    ],
+    "shortcut": []
+  },
+  {
+    "desc": "Barcha oynalar uchun OPTION ni o'rnatish",
+    "cat": "Boshqa",
+    "shell": [],
+    "tmuxcmd": [
+      "setw -g OPTION"
+    ],
+    "shortcut": []
+  },
+  {
+    "desc": "Sichqoncha rejimini yoqish",
+    "cat": "Boshqa",
+    "shell": [],
+    "tmuxcmd": [
+      "set mouse on"
+    ],
+    "shortcut": []
+  },
+  {
+    "desc": "Tugmalar bog'lanishlarini (shortcuts) ro'yxatini ko'rsatish",
+    "cat": "Yordam",
+    "shell": [
+      "tmux list-keys"
+    ],
+    "tmuxcmd": [
+      "list-keys"
+    ],
+    "shortcut": [
+      "<span class=\"prefix\"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span> <kbd>?</kbd>"
+    ]
+  },
+  {
+    "desc": "Har bir seans, oyna, panel va boshqalarni ko'rsatish",
+    "cat": "Yordam",
+    "shell": [
+      "tmux info"
+    ],
+    "tmuxcmd": [],
+    "shortcut": []
+  }
+]
